@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Señor de Mailín - Paseos Isaías</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../assets/js/tailwind-config.js"></script>
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="../assets/img/logo.png" type="image/png">
+
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- NavBar  -->
+<nav class="sticky top-0 w-full z-[100] bg-surface/80 backdrop-blur-md shadow-[0_4px_30px_rgba(27,28,26,0.05)] border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-6 py-3 max-w-7xl mx-auto">
+<a class="flex items-center gap-3 group" href="/root/index.html#inicio">
+    <!--LOGO-->
+<img src="../assets/img/logo.png" 
+     alt="Paseos Isaías"
+     class="w-13 h-14 bg-primary-container rounded-xl flex items-center justify-center text-on-primary-container font-headline font-extrabold text-xl shadow-lg group-hover:rotate-6 transition-transform">
+</a>
+<div class="hidden md:flex items-center gap-8 font-label">
+<a class="text-[#1E3A8A] font-medium hover:text-primary-container transition-all duration-300" href="/root/index.html#inicio">Inicio</a>
+<a class="text-[#1E3A8A] font-medium hover:text-primary-container transition-all duration-300" href="/root/index.html#paseos">Paseos</a>
+<a class="text-[#1E3A8A] font-medium hover:text-primary-container transition-all duration-300" href="/root/index.html#contacto">Contacto</a>
+</div>
+<div class="flex items-center gap-4">
+
+<button aria-label="Abrir menú" class="md:hidden text-[#1E3A8A] p-2" id="menu-toggle">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+
+<div class="fixed inset-0 bg-surface z-[110] flex flex-col p-8 md:hidden" id="mobile-menu">
+    <div class="flex justify-between items-center mb-12">
+        <div class="flex items-center gap-3">
+            <img src="../assets/img/logo.png" alt="Paseos Isaías" class="h-12 w-auto">
+        </div>
+
+        <button class="text-on-surface p-2" id="menu-close">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+    </div>
+
+    <div class="flex flex-col gap-8 text-2xl font-headline font-bold text-secondary">
+        <a class="mobile-nav-link" href="/root/index.html#inicio">Inicio</a>
+        <a class="mobile-nav-link" href="/root/index.html#paseos">Paseos</a>
+        <a class="mobile-nav-link" href="/root/index.html#contacto">Contacto</a>
+    </div>
+</div>
+
+<main class="pt-2">
+<!-- Hero -->
+<section class="relative h-[614px] flex items-end overflow-hidden">
+<!-- IMAGEN -->
+<img alt="Santiago del Estero Landscape" class="absolute inset-0 w-full h-full object-cover" src="../assets/img/ViajeSeñorDeMailinSinTexto.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent"></div>
+<!-- Ambient Aura -->
+<div class="absolute top-20 right-0 w-96 h-96 bg-primary-fixed opacity-15 blur-[120px] rounded-full"></div>
+<div class="relative max-w-7xl mx-auto w-full px-8 pb-16">
+<span class="text-primary-fixed bg-primary/20 backdrop-blur-md px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-4 inline-block">Fiesta</span>
+<h1 id="tituloViaje" class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-2">Señor de Mailín</h1>
+<p class="text-xl text-surface-bright/90 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">location_on</span>
+                    Santiago del Estero
+                </p>
+</div>
+</section>
+<!-- Content Grid -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left: Info Cards (Asymmetric Bento Style) -->
+<div class="lg:col-span-7 space-y-8">
+<!-- Main Trip Card -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+<div class="flex items-center gap-4">
+<div class="bg-primary-fixed p-3 rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl">calendar_today</span>
+</div>
+<div>
+<p class="text-sm text-on-surface-variant font-label font-bold uppercase tracking-wider">Fecha del Viaje</p>
+<p class="text-2xl font-headline font-extrabold text-on-surface">14 al 17 de mayo</p>
+</div>
+</div>
+<div class="bg-surface-container px-6 py-4 rounded-2xl text-right">
+<p class="text-sm text-on-surface-variant font-bold uppercase tracking-wider">Precio por Persona</p>
+<p class="text-3xl font-headline font-black text-primary">$170.000</p>
+</div>
+</div>
+<div class="prose prose-on-surface max-w-none">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Detalles del Servicio</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-6">
+                                Únete a nosotros en este viaje espiritual al corazón de Santiago del Estero. Nuestra propuesta está diseñada para aquellos que buscan vivir la festividad con comodidad y seguridad.
+                            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary">directions_bus</span>
+<span class="text-on-surface-variant font-medium">Traslado ida y vuelta</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary">restaurant</span>
+<span class="text-on-surface-variant font-medium">Vianda de ida incluida</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary">hotel_class</span>
+<span class="text-on-surface-variant font-medium">Sin estadía </span>
+</div>
+<div class="">
+
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Image Overlay Section -->
+<div class="relative grid grid-cols-2 gap-4 h-64">
+<img alt="" class=""  src=""/>
+<img alt="" class=""  src=""/>
+</div>
+</div>
+<!-- Right: Reservation Form (Glassmorphism Sticky) -->
+<div class="lg:col-span-5">
+<div class="sticky top-28 bg-surface-container-low/80 backdrop-blur-xl p-8 rounded-3xl border border-white shadow-xl">
+<div class="mb-8">
+<h2 class="text-2xl font-headline font-bold text-on-surface mb-2">Reserva tu lugar</h2>
+<p class="text-on-surface-variant">Completa el formulario y te contactaremos por WhatsApp para finalizar tu reserva.</p>
+</div>
+<form class="space-y-5" id="reservationForm">
+<div>
+<label class="block text-sm font-label font-bold text-on-surface-variant mb-2 px-1">Nombre completo</label>
+<input class="w-full bg-surface-container-high border-none rounded-2xl p-4 focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-on-surface-variant/40" id="nombre" placeholder="Ej: Juan Pérez" required="" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-label font-bold text-on-surface-variant mb-2 px-1">Teléfono</label>
+<input class="w-full bg-surface-container-high border-none rounded-2xl p-4 focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-on-surface-variant/40" id="telefono" placeholder="Ej: +54 11 1234 5678" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-label font-bold text-on-surface-variant mb-2 px-1">Cantidad de pasajes</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high border-none rounded-2xl p-4 appearance-none focus:ring-2 focus:ring-primary/40 transition-all" id="cantidad">
+<option value="1">1 pasaje</option>
+<option value="2">2 pasajes</option>
+<option value="3">3 pasajes</option>
+<option value="4">4 pasajes</option>
+<option value="5">5 pasajes</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-4 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block text-sm font-label font-bold text-on-surface-variant mb-2 px-1">Consulta o mensaje</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-2xl p-4 focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-on-surface-variant/40" id="mensaje" placeholder="¿Alguna duda adicional?" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-lg hover:shadow-primary/20 transform active:scale-95 transition-all" onclick="sendWhatsApp()" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                                Enviar consulta por WhatsApp
+                            </button>
+</form>
+<p class="text-center text-xs text-on-surface-variant mt-6">Atención inmediata • Lu a Vi 09:00 a 18:00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-12 border-t border-[#1B1C1A]/10 bg-[#FBF9F5]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-['Plus_Jakarta_Sans'] font-bold text-[#855300] text-xl mb-2">Paseos Isaías</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#1B1C1A]/70">© 2024 Paseos Isaías. El Sol de tus Viajes.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#1B1C1A]/70 hover:underline hover:text-[#4059AA] transition-opacity" href="#"></a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#1B1C1A]/70 hover:underline hover:text-[#4059AA] transition-opacity" href="#"></a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#1B1C1A]/70 hover:underline hover:text-[#4059AA] transition-opacity" href="/root/index.html#contacto">Contacto</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#1B1C1A]/70 hover:underline hover:text-[#4059AA] transition-opacity" href="#"></a>
+</div>
+</div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body></html>

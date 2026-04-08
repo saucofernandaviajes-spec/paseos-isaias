@@ -23,4 +23,15 @@
         #mobile-menu.open {
             transform: translateX(0);
         }
+
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .aurora-blob {
+            filter: blur(100px);
+            opacity: 0.15;
+            position: absolute;
+            z-index: 0;
+            border-radius: 50%;
+        }
   
